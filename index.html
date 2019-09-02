@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <title>PGN Alumni Database</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link href="https://fonts.googleapis.com/css?family=Marcellus+SC" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>PGN Alumni Database</h1>
+    <div id="user_box">
+        <h2 id="user_info"></h2>
+        <h2>Please sign out after using for security purposes.</h2>
+        <button id="signout">Sign out</button>
+    </div>
+    <div id="inputs">
+        <form id="search">
+            <select name="Seach by" id="seachType">
+                <option value="name">Name</option>
+                <option value="grad_year">Graduation Year</option>
+                <option value="city">City</option>
+                <option value="cemployer">Current Employer</option>
+                <option value="title">Title</option>
+                <option value="pemployer">Past Employer</option>
+            </select>
+            <input type="text" id="searchInput">
+            <input type="submit" id="submit"></input>
+        </form>
+    </div>
+    <div id="container">
+        <table id="alum_list" sytle="width: 100%;">
+            <tr>
+                <th>Name</th>
+                <th>Graduation Year</th>
+                <th>City</th>
+                <th>Current Employer</th>
+                <th>Title</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Previous Employer(s)</th>
+            </tr>
+        </table>
+    </div>
+
+    <!-- Insert these scripts at the bottom of the HTML, but before you use any Firebase services -->
+
+    <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/6.5.0/firebase-app.js"></script>
+
+    <!-- Add Firebase products that you want to use -->
+    <script src="https://www.gstatic.com/firebasejs/6.5.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.5.0/firebase-firestore.js"></script>
+
+    <script src="main.js"></script>
+</body>

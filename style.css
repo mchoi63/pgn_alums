@@ -1,0 +1,54 @@
+* {
+    font-family: 'Marcellus SC', serif;
+}
+
+body {
+    background-color: #fafafa;
+    text-align: center;
+}
+
+#signout {
+	font-size: 200%;
+}
+
+button {
+    color: inherit;
+    font-family: 'Marcellus SC', serif;
+    font-size: inherit;
+    background: white;
+    padding: 0.3rem 3.4rem;
+    border: 3px solid black;
+    margin-right: 2.6rem;
+    box-shadow: 0 0 0 black;
+    transition: all 0.2s;
+}
+
+button:last-child {
+    margin: 0;
+}
+
+button:hover {
+    box-shadow: 0.4rem 0.4rem 0 black;
+    transform: translate(-0.4rem, -0.4rem);
+}
+
+button:active {
+    box-shadow: 0 0 0 black;
+    transform: translate(0, 0);
+}
+
+#user_box {
+	margin: 10%;
+}
+
+table {
+    width: 100%;
+    padding: 5%;
+    text-transform: uppercase;
+    font-size: 80%;
+}
+
+th {
+	text-align: left;
+	border: 1px solid #ddd;
+}
